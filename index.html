@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dyzainer | rFactor Mods & Custom Software</title>
+  <title>Dyzainer</title>
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -132,9 +132,9 @@
 
   <!-- TOP ANNOUNCEMENT BAR -->
   <div class="w-full bg-brand-gradient text-black font-heavy text-xs py-2 px-4 text-center tracking-wider flex items-center justify-center gap-3 shadow-lg">
-    <span class="bg-black text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">rFACTOR 2 & SOFTWARE</span>
-    <span>NOVÉ MODIFIKÁCIE PRE APEX GT3 A PRO TELEMETRY UI SÚ TERAZ DOSTUPNÉ</span>
-    <a href="#products" class="underline hover:opacity-80 transition hidden sm:inline ml-2 font-mono">PREHLIADAŤ KOLEKCIU &rarr;</a>
+    <span class="bg-black text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">Novinky</span>
+    <span>Nová verzia modifikácie GRS1 2025 pre rFactor je dostupná</span>
+    <a href="#products" class="underline hover:opacity-80 transition hidden sm:inline ml-2 font-mono">Prehliadať &rarr;</a>
   </div>
 
   <!-- NAVIGATION HEADER -->
@@ -148,20 +148,20 @@
         </div>
         <div>
           <span class="font-heavy text-2xl lg:text-3xl tracking-wider text-white flex items-center gap-1">
-            DYZAINER
+            Dyzainer
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
           </span>
-          <p class="text-[10px] text-gray-400 tracking-widest font-mono uppercase -mt-1">SOFTWARE & SIMULATION</p>
+          <p class="text-[10px] text-gray-400 tracking-widest font-mono uppercase -mt-1">Pozdvihni svoju hru</p>
         </div>
       </a>
 
       <!-- DESKTOP NAV LINKS -->
       <nav class="hidden md:flex items-center gap-6 font-heavy text-xs tracking-wider text-gray-300">
-        <a href="#products" onclick="filterCategory('all')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">VŠETKY PRODUKTY</a>
-        <a href="#products" onclick="filterCategory('rfactor')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">rFACTOR MODY</a>
-        <a href="#products" onclick="filterCategory('software')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">SOFTVÉR & TOOLS</a>
+        <a href="#products" onclick="filterCategory('all')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">Všetky produkty</a>
+        <a href="#products" onclick="filterCategory('rfactor')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">rFactor modifikácie</a>
+        <a href="#products" onclick="filterCategory('software')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">Softvér</a>
         <a href="#configurator" class="hover:text-indigo-400 transition py-1 border-b-2 border-transparent hover:border-indigo-400 flex items-center gap-1">
-          <i class="fa-solid fa-sliders text-cyan-400"></i> CONFIGURATOR
+          <i class="fa-solid fa-sliders text-cyan-400"></i> Konfigurátor
         </a>
       </nav>
 
@@ -169,7 +169,7 @@
       <div class="flex items-center gap-3">
         <!-- Search input trigger/desktop -->
         <div class="relative hidden sm:block w-48 lg:w-64">
-          <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Hľadať mody / softvér..." 
+          <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Hľadať" 
             class="w-full bg-black/60 border border-gray-800 rounded-lg py-1.5 pl-9 pr-3 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-cyan-400 transition font-mono">
           <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-gray-500 text-xs"></i>
         </div>
@@ -178,7 +178,7 @@
         <button onclick="toggleCartDrawer(true)" class="relative bg-brand-gradient p-0.5 rounded-lg group shadow-neon-cyan focus:outline-none">
           <div class="bg-black group-hover:bg-transparent transition rounded-[7px] px-3 py-1.5 flex items-center gap-2">
             <i class="fa-solid fa-cart-shopping text-cyan-400 group-hover:text-black text-sm transition"></i>
-            <span class="font-heavy text-xs text-white group-hover:text-black transition">KOŠÍK</span>
+            <span class="font-heavy text-xs text-white group-hover:text-black transition">Košík</span>
             <span id="cartBadge" class="bg-indigo-600 group-hover:bg-black group-hover:text-cyan-400 text-white font-mono text-xs px-1.5 py-0.5 rounded-full font-bold">0</span>
           </div>
         </button>
@@ -198,10 +198,10 @@
         <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-500 text-sm"></i>
       </div>
       <div class="grid grid-cols-2 gap-2 font-heavy text-xs text-center">
-        <button onclick="filterCategory('all'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-gray-300 hover:text-white">VŠETKY</button>
-        <button onclick="filterCategory('rfactor'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-cyan-400">rFACTOR MODY</button>
-        <button onclick="filterCategory('software'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-indigo-400">SOFTVÉR & TOOLS</button>
-        <a href="#configurator" onclick="toggleMobileNav()" class="bg-brand-gradient text-black py-2 rounded flex items-center justify-center gap-1">CONFIGURATOR</a>
+        <button onclick="filterCategory('all'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-gray-300 hover:text-white">Všetky produkty</button>
+        <button onclick="filterCategory('rfactor'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-cyan-400">rFactor modifikácie</button>
+        <button onclick="filterCategory('software'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-indigo-400">Softvér</button>
+        <a href="#configurator" onclick="toggleMobileNav()" class="bg-brand-gradient text-black py-2 rounded flex items-center justify-center gap-1">Konfigurátor</a>
       </div>
     </div>
   </header>
@@ -222,25 +222,25 @@
         </div>
 
         <h1 class="font-heavy text-4xl sm:text-6xl lg:text-7xl leading-none text-white tracking-tight">
-          NEXT-GEN <br>
-          <span class="gradient-text">rFACTOR MODS</span> <br>
-          & SIM SOFTWARE
+          Najkvalitnejšie <br>
+          <span class="gradient-text">rFactor modifikácie</span> <br>
+          a softvér pre hry
         </h1>
 
         <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
-          Špičková fyzika, ultra-precízne laserom skenované trate, telemetry analýzy v reálnom čase a prispôsobený závodný softvér vyvíjaný pre najlepších sim-racerov.
+          Špičková fyzika, laserom skenované trate, modely áut tvorené od A po Z ľuďmi.
         </p>
 
         <!-- CTA Buttons -->
         <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
           <a href="#products" onclick="filterCategory('rfactor')" class="px-8 py-4 rounded-xl bg-brand-gradient text-black font-heavy text-sm tracking-wider shadow-neon-cyan hover:scale-105 active:scale-95 transition flex items-center gap-3">
             <i class="fa-solid fa-flag-checkered text-lg"></i>
-            PREHLIADAŤ MODY
+            Modifikácie
           </a>
 
           <a href="#products" onclick="filterCategory('software')" class="px-8 py-4 rounded-xl glass-panel text-white border border-white/20 font-heavy text-sm tracking-wider hover:border-indigo-400 hover:text-cyan-300 hover:scale-105 active:scale-95 transition flex items-center gap-3">
             <i class="fa-solid fa-code text-lg text-indigo-400"></i>
-            CUSTOM SOFTVÉR
+            Softvér
           </a>
         </div>
 
@@ -248,15 +248,15 @@
         <div class="pt-8 grid grid-cols-3 gap-4 border-t border-white/10 max-w-md mx-auto lg:mx-0 font-mono">
           <div>
             <p class="text-2xl font-heavy text-white">100%</p>
-            <p class="text-xs text-gray-500 uppercase">Physic Realism</p>
+            <p class="text-xs text-gray-500 uppercase">Kvalita</p>
           </div>
           <div>
             <p class="text-2xl font-heavy text-cyan-400">rF1 / rF2</p>
-            <p class="text-xs text-gray-500 uppercase">Full Support</p>
+            <p class="text-xs text-gray-500 uppercase">Plná podpora</p>
           </div>
           <div>
             <p class="text-2xl font-heavy text-indigo-400">&lt; 1ms</p>
-            <p class="text-xs text-gray-500 uppercase">Telemetry Output</p>
+            <p class="text-xs text-gray-500 uppercase">Output</p>
           </div>
         </div>
       </div>
@@ -322,22 +322,22 @@
     <!-- Section Header & Filter Tabs -->
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
       <div>
-        <p class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Katalóg Dyzainer</p>
+        <p class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Katalóg</p>
         <h2 class="font-heavy text-3xl sm:text-5xl text-white">
-          PRODUKTY & <span class="gradient-text">MODIFIKÁCIE</span>
+          Produkty a <span class="gradient-text">modifikácie</span>
         </h2>
       </div>
 
       <!-- Category Filter Tabs -->
       <div class="flex flex-wrap items-center gap-2 bg-black/60 p-1.5 rounded-xl border border-white/10 font-heavy text-xs">
         <button onclick="filterCategory('all')" id="tab-all" class="filter-btn px-4 py-2 rounded-lg text-black bg-brand-gradient shadow-neon-cyan transition">
-          VŠETKO
+          Všetko
         </button>
         <button onclick="filterCategory('rfactor')" id="tab-rfactor" class="filter-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white transition">
-          rFACTOR MODY
+          rFactor modifikácie
         </button>
         <button onclick="filterCategory('software')" id="tab-software" class="filter-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white transition">
-          SOFTVÉR & TOOLS
+          Softvér
         </button>
       </div>
     </div>
@@ -351,7 +351,6 @@
       <div class="flex items-center gap-2">
         <label for="sortSelect" class="hidden sm:inline">Zoradiť:</label>
         <select id="sortSelect" onchange="renderProducts()" class="bg-black/80 border border-gray-800 rounded px-2 py-1 text-xs text-white focus:outline-none focus:border-cyan-400">
-          <option value="default">Odporúčané</option>
           <option value="price-low">Cena: Najlacnejšie</option>
           <option value="price-high">Cena: Najdrahšie</option>
           <option value="name">Názov A-Z</option>
@@ -456,41 +455,41 @@
       <div class="space-y-4 md:col-span-1">
         <div class="flex items-center gap-3">
           <div class="w-8 h-8 rounded bg-brand-gradient flex items-center justify-center text-black font-heavy">D</div>
-          <span class="font-heavy text-xl text-white">DYZAINER</span>
+          <span class="font-heavy text-xl text-white">Dyzainer</span>
         </div>
         <p class="text-gray-400 text-xs leading-relaxed">
-          Slovenská vývojárska značka zameraná na vývoj závodných automobilových simulátorov, modifikácií pre rFactor a vysoko-rýchlostných telemetry aplikácií.
+          Slovenská vývojárska značka zameraná na vývoj modifikácii pre závodné automobilové simulátory.
         </p>
       </div>
 
       <!-- Quick Links -->
       <div class="space-y-3 font-mono text-xs">
-        <p class="font-heavy text-white text-sm mb-2">MODIFIKÁCIE</p>
-        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">GT3 & Endurance Packy</a></p>
-        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Formula Simulator Mods</a></p>
-        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Laser-Scan Shader Trate</a></p>
+        <p class="font-heavy text-white text-sm mb-2">Modifikácie</p>
+        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Global Racing Series 1 modifikácie</a></p>
+        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Global Racing Series 2 modifikácie</a></p>
+        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Laserom skenované trate</a></p>
       </div>
 
       <!-- Software Links -->
       <div class="space-y-3 font-mono text-xs">
-        <p class="font-heavy text-white text-sm mb-2">SOFTVÉR & TOOLS</p>
-        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Telemetry Pro Teleport UI</a></p>
-        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Dyzainer SimDash Client</a></p>
-        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Setup Analyzer Engine</a></p>
+        <p class="font-heavy text-white text-sm mb-2">Softvér</p>
+        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Null 1</a></p>
+        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Null 2</a></p>
+        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Null 3</a></p>
       </div>
 
       <!-- Contact & Specs -->
       <div class="space-y-3 font-mono text-xs">
-        <p class="font-heavy text-white text-sm mb-2">PODPORA & KOMPETENCIE</p>
-        <p class="text-gray-400"><i class="fa-solid fa-envelope text-cyan-400 mr-2"></i> support@dyzainer.com</p>
-        <p class="text-gray-400"><i class="fa-solid fa-gamepad text-indigo-400 mr-2"></i> rFactor 1 / rFactor 2 Ready</p>
-        <p class="text-gray-400"><i class="fa-solid fa-shield-halved text-cyan-400 mr-2"></i> Verifikované Fyzikálne Modely</p>
+        <p class="font-heavy text-white text-sm mb-2">Podpora a kompetencie</p>
+        <p class="text-gray-400"><i class="fa-solid fa-envelope text-cyan-400 mr-2"></i> dyzainer.official@gmail.com</p>
+        <p class="text-gray-400"><i class="fa-solid fa-gamepad text-indigo-400 mr-2"></i> Null 1</p>
+        <p class="text-gray-400"><i class="fa-solid fa-shield-halved text-cyan-400 mr-2"></i> Null 2</p>
       </div>
 
     </div>
 
     <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-mono gap-4">
-      <p>&copy; 2026 DYZAINER Software & Racing Mods. Všetky práva vyhradené.</p>
+      <p>&copy; 2026 Dyzainer. Všetky práva vyhradené.</p>
       <div class="flex gap-4">
         <span>Prispôsobené pre GitHub Pages</span>
         <span>•</span>
