@@ -134,7 +134,7 @@
   <div class="w-full bg-brand-gradient text-black font-heavy text-xs py-2 px-4 text-center tracking-wider flex items-center justify-center gap-3 shadow-lg">
     <span class="bg-black text-white text-[10px] px-2 py-0.5 rounded font-mono font-bold">Novinky</span>
     <span>Nová verzia modifikácie GRS1 2025 pre rFactor je dostupná</span>
-    <a href="#products" class="underline hover:opacity-80 transition hidden sm:inline ml-2 font-mono">Prehliadať &rarr;</a>
+    <a href="#products" class="underline hover:opacity-80 transition hidden sm:inline ml-2 font-mono">Prezerať &rarr;</a>
   </div>
 
   <!-- NAVIGATION HEADER -->
@@ -143,8 +143,9 @@
       
       <!-- LOGO -->
       <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-lg bg-brand-gradient flex items-center justify-center text-black font-heavy text-xl shadow-neon-cyan transform group-hover:rotate-6 transition">
-          D
+        <div class="w-10 h-10 rounded-lg bg-brand-gradient flex items-center justify-center p-1 shadow-neon-cyan transform group-hover:rotate-6 transition overflow-hidden">
+        <!-- Namiesto písmena D vložte tento img tag: -->
+        <img src="logo.png" alt="Dyzainer Logo" class="w-full h-full object-contain">
         </div>
         <div>
           <span class="font-heavy text-2xl lg:text-3xl tracking-wider text-white flex items-center gap-1">
@@ -155,13 +156,25 @@
         </div>
       </a>
 
+      <!-- LOGO -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="transform group-hover:rotate-6 transition duration-300">
+        <!-- Namiesto textu Dyzainer sa zobrazí vaše logo -->
+        <img src="logo.png" alt="Dyzainer Logo" class="h-8 lg:h-10 w-auto object-contain shadow-neon-cyan rounded-md">
+        </div>
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse self-center"></span>
+        <div>
+          <p class="text-[10px] text-gray-400 tracking-widest font-mono uppercase">Pozdvihni svoju hru</p>
+        </div>
+      </a>
+
       <!-- DESKTOP NAV LINKS -->
       <nav class="hidden md:flex items-center gap-6 font-heavy text-xs tracking-wider text-gray-300">
         <a href="#products" onclick="filterCategory('all')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">Všetky produkty</a>
-        <a href="#products" onclick="filterCategory('rfactor')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">rFactor modifikácie</a>
+        <a href="#products" onclick="filterCategory('rfactor')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">Modifikácie</a>
         <a href="#products" onclick="filterCategory('software')" class="hover:text-cyan-400 transition py-1 border-b-2 border-transparent hover:border-cyan-400">Softvér</a>
         <a href="#configurator" class="hover:text-indigo-400 transition py-1 border-b-2 border-transparent hover:border-indigo-400 flex items-center gap-1">
-          <i class="fa-solid fa-sliders text-cyan-400"></i> Konfigurátor
+          <i class="fa-solid fa-sliders text-cyan-400"></i> Null
         </a>
       </nav>
 
@@ -199,9 +212,9 @@
       </div>
       <div class="grid grid-cols-2 gap-2 font-heavy text-xs text-center">
         <button onclick="filterCategory('all'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-gray-300 hover:text-white">Všetky produkty</button>
-        <button onclick="filterCategory('rfactor'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-cyan-400">rFactor modifikácie</button>
+        <button onclick="filterCategory('rfactor'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-cyan-400">Modifikácie</button>
         <button onclick="filterCategory('software'); toggleMobileNav()" class="bg-white/5 py-2 rounded text-indigo-400">Softvér</button>
-        <a href="#configurator" onclick="toggleMobileNav()" class="bg-brand-gradient text-black py-2 rounded flex items-center justify-center gap-1">Konfigurátor</a>
+        <a href="#configurator" onclick="toggleMobileNav()" class="bg-brand-gradient text-black py-2 rounded flex items-center justify-center gap-1">Null</a>
       </div>
     </div>
   </header>
@@ -215,34 +228,11 @@
     <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
       
       <!-- Left Banner Text Content -->
-      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-cyan-500/30 backdrop-blur-md">
-          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-          <span class="font-mono text-xs text-cyan-300 font-semibold uppercase tracking-wider">OFFICIAL DYZAINER SIMULATION HUBS</span>
-        </div>
-
         <h1 class="font-heavy text-4xl sm:text-6xl lg:text-7xl leading-none text-white tracking-tight">
           Najkvalitnejšie <br>
-          <span class="gradient-text">rFactor modifikácie</span> <br>
-          a softvér pre hry
+          <span class="gradient-text">modifikácie</span> <br>
+          pre hry
         </h1>
-
-        <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
-          Špičková fyzika, laserom skenované trate, modely áut tvorené od A po Z ľuďmi.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-          <a href="#products" onclick="filterCategory('rfactor')" class="px-8 py-4 rounded-xl bg-brand-gradient text-black font-heavy text-sm tracking-wider shadow-neon-cyan hover:scale-105 active:scale-95 transition flex items-center gap-3">
-            <i class="fa-solid fa-flag-checkered text-lg"></i>
-            Modifikácie
-          </a>
-
-          <a href="#products" onclick="filterCategory('software')" class="px-8 py-4 rounded-xl glass-panel text-white border border-white/20 font-heavy text-sm tracking-wider hover:border-indigo-400 hover:text-cyan-300 hover:scale-105 active:scale-95 transition flex items-center gap-3">
-            <i class="fa-solid fa-code text-lg text-indigo-400"></i>
-            Softvér
-          </a>
-        </div>
 
         <!-- Metric Badges -->
         <div class="pt-8 grid grid-cols-3 gap-4 border-t border-white/10 max-w-md mx-auto lg:mx-0 font-mono">
@@ -251,12 +241,12 @@
             <p class="text-xs text-gray-500 uppercase">Kvalita</p>
           </div>
           <div>
-            <p class="text-2xl font-heavy text-cyan-400">rF1 / rF2</p>
-            <p class="text-xs text-gray-500 uppercase">Plná podpora</p>
+            <p class="text-2xl font-heavy text-cyan-400">100%</p>
+            <p class="text-xs text-gray-500 uppercase">Výkon</p>
           </div>
           <div>
-            <p class="text-2xl font-heavy text-indigo-400">&lt; 1ms</p>
-            <p class="text-xs text-gray-500 uppercase">Output</p>
+            <p class="text-2xl font-heavy text-indigo-400">100%</p>
+            <p class="text-xs text-gray-500 uppercase">Zábava</p>
           </div>
         </div>
       </div>
@@ -277,25 +267,25 @@
               
               <div class="relative z-10 w-full p-6 space-y-4">
                 <div class="flex justify-between items-center">
-                  <span class="bg-cyan-500/20 text-cyan-300 font-mono text-xs px-2.5 py-1 rounded border border-cyan-500/40">LIVE TELEMETRY HUD</span>
+                  <span class="bg-cyan-500/20 text-cyan-300 font-mono text-xs px-2.5 py-1 rounded border border-cyan-500/40">Null</span>
                   <span class="text-xs font-mono text-emerald-400 flex items-center gap-1">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> CONNECTED
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Null
                   </span>
                 </div>
 
                 <!-- Simulation Specs Preview -->
                 <div class="bg-black/70 backdrop-blur-md rounded-lg p-3 border border-white/10 space-y-2 font-mono text-xs">
                   <div class="flex justify-between text-gray-400">
-                    <span>VEHICLE:</span>
-                    <span class="text-white font-bold">APEX GT3 EVO (2026)</span>
+                    <span>Null</span>
+                    <span class="text-white font-bold">Null</span>
                   </div>
                   <div class="flex justify-between text-gray-400">
-                    <span>TELEMETRY RATE:</span>
-                    <span class="text-cyan-400">1000 Hz Multi-Thread</span>
+                    <span>Null</span>
+                    <span class="text-cyan-400">Null</span>
                   </div>
                   <div class="flex justify-between text-gray-400">
-                    <span>PHYSICS MODEL:</span>
-                    <span class="text-indigo-400">FlexChassis V2.8</span>
+                    <span>Null</span>
+                    <span class="text-indigo-400">Null</span>
                   </div>
                   <!-- RPM Bar visual -->
                   <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden mt-2">
@@ -304,8 +294,8 @@
                 </div>
 
                 <div class="flex items-center justify-between text-[11px] font-mono text-gray-400">
-                  <span>DYZAINER ENGINE 4.2</span>
-                  <span class="text-cyan-400 font-bold">rFACTOR 2 READY</span>
+                  <span>Null</span>
+                  <span class="text-cyan-400 font-bold">Null</span>
                 </div>
               </div>
             </div>
@@ -324,7 +314,7 @@
       <div>
         <p class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Katalóg</p>
         <h2 class="font-heavy text-3xl sm:text-5xl text-white">
-          Produkty a <span class="gradient-text">modifikácie</span>
+          Produkty
         </h2>
       </div>
 
@@ -334,7 +324,7 @@
           Všetko
         </button>
         <button onclick="filterCategory('rfactor')" id="tab-rfactor" class="filter-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white transition">
-          rFactor modifikácie
+          Modifikácie
         </button>
         <button onclick="filterCategory('software')" id="tab-software" class="filter-btn px-4 py-2 rounded-lg text-gray-400 hover:text-white transition">
           Softvér
@@ -353,7 +343,7 @@
         <select id="sortSelect" onchange="renderProducts()" class="bg-black/80 border border-gray-800 rounded px-2 py-1 text-xs text-white focus:outline-none focus:border-cyan-400">
           <option value="price-low">Cena: Najlacnejšie</option>
           <option value="price-high">Cena: Najdrahšie</option>
-          <option value="name">Názov A-Z</option>
+          <option value="name">Názov: A-Z</option>
         </select>
       </div>
     </div>
@@ -373,52 +363,52 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
         <div class="lg:col-span-5 space-y-4">
-          <span class="bg-brand-gradient text-black font-heavy text-[10px] px-3 py-1 rounded-full uppercase tracking-wider">INTERAKTÍVNY MOD ENGINE</span>
-          <h3 class="font-heavy text-3xl text-white">SIM SETUP & LICENSE CONFIGURATOR</h3>
+          <span class="bg-brand-gradient text-black font-heavy text-[10px] px-3 py-1 rounded-full uppercase tracking-wider">Null</span>
+          <h3 class="font-heavy text-3xl text-white">Null</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Vygenerujte si vlastnú verziu softvérovej licencie alebo nakonfigurujte špecifikácie balíka telemetry modov pre váš racing rig pred zakúpením.
+            Null
           </p>
 
           <div class="space-y-3 font-mono text-xs pt-2">
             <div class="flex items-center gap-3 text-gray-300">
               <i class="fa-solid fa-check text-cyan-400"></i>
-              <span>Okamžitá aktivácia licencie pre rFactor 2 / Le Mans Ultimate</span>
+              <span>Null</span>
             </div>
             <div class="flex items-center gap-3 text-gray-300">
               <i class="fa-solid fa-check text-cyan-400"></i>
-              <span>Live UDP Telemetry Stream na spojené mobilné aplikácie</span>
+              <span>Null</span>
             </div>
             <div class="flex items-center gap-3 text-gray-300">
               <i class="fa-solid fa-check text-cyan-400"></i>
-              <span>Doživotné aktualizácie fyzikálnych modelov zdarma</span>
+              <span>Null</span>
             </div>
           </div>
         </div>
 
         <div class="lg:col-span-7 bg-black/80 rounded-2xl p-6 border border-white/10 font-mono space-y-6">
           <div class="flex justify-between items-center border-b border-white/10 pb-3">
-            <span class="text-xs text-gray-400">DYZAINER CONFIG BUILDER v3.4</span>
-            <span id="configStatus" class="text-xs text-cyan-400 font-bold">STAV: PRIPRAVENÉ</span>
+            <span class="text-xs text-gray-400">Null</span>
+            <span id="configStatus" class="text-xs text-cyan-400 font-bold">Null</span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
             <!-- Platform selection -->
             <div>
-              <label class="block text-gray-400 mb-1">Cieľová Platforma:</label>
+              <label class="block text-gray-400 mb-1">Null</label>
               <select id="cfgPlatform" onchange="updateConfigPreview()" class="w-full bg-brand-darkBg border border-gray-800 rounded p-2 text-white focus:border-cyan-400 focus:outline-none">
-                <option value="rFactor 2 (Steam)">rFactor 2 (Steam Build)</option>
-                <option value="rFactor 1 (Legacy Pro)">rFactor 1 (Pro Telemetry)</option>
-                <option value="Standalone App (Windows)">Standalone Windows Softvér</option>
+                <option value="rFactor 2 (Steam)">Null</option>
+                <option value="rFactor 1 (Legacy Pro)">Null</option>
+                <option value="Standalone App (Windows)">Null</option>
               </select>
             </div>
 
             <!-- Physics tier -->
             <div>
-              <label class="block text-gray-400 mb-1">Fyzikálny Engine Tier:</label>
+              <label class="block text-gray-400 mb-1">Null</label>
               <select id="cfgTier" onchange="updateConfigPreview()" class="w-full bg-brand-darkBg border border-gray-800 rounded p-2 text-white focus:border-cyan-400 focus:outline-none">
-                <option value="GT3 / GTE Ultra Precision">GT3 / GTE Ultra Precision (+€0)</option>
-                <option value="Formula Hybrid 2026 Spec">Formula Hybrid 2026 Spec (+€10)</option>
-                <option value="Custom Telemetry API Access">Custom Telemetry API Access (+€15)</option>
+                <option value="GT3 / GTE Ultra Precision">Null</option>
+                <option value="Formula Hybrid 2026 Spec">Null</option>
+                <option value="Custom Telemetry API Access">Null</option>
               </select>
             </div>
           </div>
@@ -426,19 +416,19 @@
           <!-- Live Generated License Preview Key Box -->
           <div class="bg-brand-darkBg p-4 rounded-xl border border-white/10 space-y-2">
             <div class="flex justify-between items-center text-[11px] text-gray-500">
-              <span>GENEROVANÝ KĽÚČ LOKÁLNEJ LICENCIE:</span>
-              <button onclick="copyGeneratedKey()" class="text-cyan-400 hover:underline"><i class="fa-solid fa-copy"></i> Skopírovať</button>
+              <span>Null</span>
+              <button onclick="copyGeneratedKey()" class="text-cyan-400 hover:underline"><i class="fa-solid fa-copy"></i> Null</button>
             </div>
-            <p id="generatedKey" class="text-sm font-bold text-white tracking-widest break-all">DYZ-RF2-9984-APEX-2026-X89</p>
+            <p id="generatedKey" class="text-sm font-bold text-white tracking-widest break-all">Null</p>
           </div>
 
           <div class="flex items-center justify-between pt-2">
             <div>
-              <span class="text-xs text-gray-500 block">ODHADOVANÁ CENA CONFIGU:</span>
-              <span id="configPrice" class="font-heavy text-2xl text-white">€29.99</span>
+              <span class="text-xs text-gray-500 block">Null</span>
+              <span id="configPrice" class="font-heavy text-2xl text-white">Null</span>
             </div>
             <button onclick="addConfigToCart()" class="bg-brand-gradient text-black font-heavy text-xs px-6 py-3 rounded-lg shadow-neon-cyan hover:scale-105 transition">
-              PRIDAŤ CONFIG DO KOŠÍKA
+              Null
             </button>
           </div>
         </div>
@@ -454,36 +444,21 @@
       <!-- Brand column -->
       <div class="space-y-4 md:col-span-1">
         <div class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded bg-brand-gradient flex items-center justify-center text-black font-heavy">D</div>
-          <span class="font-heavy text-xl text-white">Dyzainer</span>
+          <a href="#" class="transform hover:rotate-6 transition duration-300 inline-block">
+          <img src="logo.png" alt="Dyzainer Logo" class="h-8 w-auto object-contain shadow-neon-cyan rounded">
+          </a>
         </div>
         <p class="text-gray-400 text-xs leading-relaxed">
           Slovenská vývojárska značka zameraná na vývoj modifikácii pre závodné automobilové simulátory.
         </p>
       </div>
 
-      <!-- Quick Links -->
-      <div class="space-y-3 font-mono text-xs">
-        <p class="font-heavy text-white text-sm mb-2">Modifikácie</p>
-        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Global Racing Series 1 modifikácie</a></p>
-        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Global Racing Series 2 modifikácie</a></p>
-        <p><a href="#products" onclick="filterCategory('rfactor')" class="text-gray-400 hover:text-cyan-400">Laserom skenované trate</a></p>
-      </div>
-
-      <!-- Software Links -->
-      <div class="space-y-3 font-mono text-xs">
-        <p class="font-heavy text-white text-sm mb-2">Softvér</p>
-        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Null 1</a></p>
-        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Null 2</a></p>
-        <p><a href="#products" onclick="filterCategory('software')" class="text-gray-400 hover:text-indigo-400">Null 3</a></p>
-      </div>
-
       <!-- Contact & Specs -->
       <div class="space-y-3 font-mono text-xs">
         <p class="font-heavy text-white text-sm mb-2">Podpora a kompetencie</p>
         <p class="text-gray-400"><i class="fa-solid fa-envelope text-cyan-400 mr-2"></i> dyzainer.official@gmail.com</p>
-        <p class="text-gray-400"><i class="fa-solid fa-gamepad text-indigo-400 mr-2"></i> Null 1</p>
-        <p class="text-gray-400"><i class="fa-solid fa-shield-halved text-cyan-400 mr-2"></i> Null 2</p>
+        <p class="text-gray-400"><i class="fa-solid fa-gamepad text-indigo-400 mr-2"></i>Null</p>
+        <p class="text-gray-400"><i class="fa-solid fa-shield-halved text-cyan-400 mr-2"></i> Null</p>
       </div>
 
     </div>
@@ -491,9 +466,7 @@
     <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-mono gap-4">
       <p>&copy; 2026 Dyzainer. Všetky práva vyhradené.</p>
       <div class="flex gap-4">
-        <span>Prispôsobené pre GitHub Pages</span>
-        <span>•</span>
-        <span class="text-cyan-400">Direct Digital Download</span>
+        <span>Prispôsobené pre GitHub Pages.</span>
       </div>
     </div>
   </footer>
@@ -526,7 +499,7 @@
         <div class="flex items-center justify-between border-b border-white/10 pb-4">
           <div class="flex items-center gap-3">
             <i class="fa-solid fa-cart-shopping text-cyan-400 text-xl"></i>
-            <h3 class="font-heavy text-xl text-white">NÁKUPNÝ KOŠÍK</h3>
+            <h3 class="font-heavy text-xl text-white">Nákupný košík</h3>
           </div>
           <button onclick="toggleCartDrawer(false)" class="text-gray-400 hover:text-white p-2">
             <i class="fa-solid fa-xmark text-xl"></i>
@@ -540,19 +513,13 @@
       </div>
 
       <!-- Cart Footer / Total / Checkout -->
-      <div class="border-t border-white/10 pt-4 space-y-4">
-        <div class="flex justify-between items-center font-mono">
-          <span class="text-gray-400 text-xs">SPOLU K ÚHRADE:</span>
-          <span id="cartTotal" class="font-heavy text-2xl text-cyan-400">€0.00</span>
-        </div>
-
         <button onclick="processCheckout()" class="w-full bg-brand-gradient text-black font-heavy text-sm py-4 rounded-xl shadow-neon-cyan hover:scale-[1.02] active:scale-98 transition flex items-center justify-center gap-2">
           <i class="fa-solid fa-download"></i>
-          DOKONČIŤ & STIAHNUŤ MODY
+          Stiahnuť
         </button>
 
         <p class="text-[10px] text-center font-mono text-gray-500">
-          Priamy digitálny kľúč & odkaz na stiahnutie bude vygenerovaný okamžite.
+          Priamy odkaz na stiahnutie bude vygenerovaný okamžite.
         </p>
       </div>
 
@@ -563,7 +530,7 @@
   <div id="toast" class="fixed bottom-6 right-6 z-50 glass-panel bg-black/90 border-l-4 border-cyan-400 p-4 rounded-xl shadow-2xl hidden transform translate-y-10 transition-all font-mono text-xs flex items-center gap-3 max-w-sm">
     <i class="fa-solid fa-circle-check text-cyan-400 text-xl" id="toastIcon"></i>
     <div>
-      <p id="toastTitle" class="font-bold text-white uppercase">OZNÁMENIE</p>
+      <p id="toastTitle" class="font-bold text-white uppercase">Oznámenie</p>
       <p id="toastMsg" class="text-gray-300">Položka bola pridaná do košíka.</p>
     </div>
   </div>
