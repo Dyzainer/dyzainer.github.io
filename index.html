@@ -210,22 +210,6 @@
           <span class="gradient-text">modifikácie pre</span> <br>
           simulátory a hry
         </h1>
-
-        <!-- Metric Badges -->
-        <div class="pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6 border-t border-white/10 max-w-md mx-auto lg:mx-0 font-mono text-center sm:text-left">
-          <div class="space-y-1">
-            <p class="text-2xl lg:text-3xl font-heavy text-white leading-tight">100%</p>
-            <p class="text-xs text-gray-400 uppercase tracking-wider">Kvalita</p>
-          </div>
-          <div class="space-y-1">
-            <p class="text-2xl lg:text-3xl font-heavy text-cyan-400 leading-tight">100%</p>
-            <p class="text-xs text-gray-400 uppercase tracking-wider">Výkon</p>
-          </div>
-        <div class="space-y-1">
-            <p class="text-2xl lg:text-3xl font-heavy text-indigo-400 leading-tight">100%</p>
-            <p class="text-xs text-gray-400 uppercase tracking-wider">Zábava</p>
-        </div>
-        </div>
   </section>
 
   <!-- MAIN CATALOG SECTION -->
@@ -375,117 +359,22 @@
     // SAMPLE PRODUCTS DATA FOR DYZAINER STOREFRONT
     const productsData = [
       {
-        id: 'apex-gt3-evo',
-        name: 'APEX GT3 EVO MOD PACK',
-        category: 'rfactor',
-        price: 29.99,
-        badge: 'rF2 COMPATIBLE',
-        rating: 4.9,
-        reviewsCount: 38,
+        id: 'grs-1-2025',
+        name: 'GRS 1 2025',
+        category: 'modifikácie',
+        price: 0.00,
+        badge: 'rF1 compatible',
+        rating: 5.0,
+        reviewsCount: 1528,
         image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80',
-        shortSpecs: 'rFactor 2 / FlexChassis V2 / 2026 GT3 Physics',
-        description: 'Špičkový balík GT3 vozidiel s kompletnou aerodynamikou nového štandardu, reálnym modelom opotrebovania pneumatík a spracovaným zvukovým engine-om podľa skutočných závodných špeciálov.',
-        compat: 'rFactor 2 (Build 1.1126+)',
+        shortSpecs: 'rFactor / GRS1 / 2025',
+        description: 'Špičkový balík GRS1 vozidiel s kompletnou aerodynamikou nového štandardu, reálnym modelom opotrebovania pneumatík a spracovaným zvukovým engine-om podľa skutočných závodných špeciálov.',
+        compat: 'rFactor (Build 1.225)',
         features: [
-          'Detailný CPM2 model pneumatík s termo-dynamikou',
+          'Detailný model pneumatík s termo-dynamikou',
           'Viac než 20 oficiálnych tímových kamufláží (Liveries)',
           'Plná podpora Force Feedback rozhrania Realfeel',
-          'Priamy výstup pre SimHub a Dyzainer SimDash'
-        ]
-      },
-      {
-        id: 'telemetry-pro-ui',
-        name: 'TELEMETRY PRO TELEPORT UI',
-        category: 'software',
-        price: 49.99,
-        badge: 'STANDALONE SOFTVÉR',
-        rating: 5.0,
-        reviewsCount: 52,
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-        shortSpecs: 'Windows App / UDP Telemetry / 1000Hz Sync',
-        description: 'Profesionálna samostatná aplikácia na okamžitú vizualizáciu telemetry údajov z rFactoru. Určené pre inžinierov, závodné tímy aj jednotlivcov hľadajúcich stotiny na kolo.',
-        compat: 'rFactor 1, rFactor 2, Automobilista 2',
-        features: [
-          'Prekrývanie grafov zrýchlenia, brzdenia a uhla volantu',
-          'Export dát do formátu MoTeC i2 Pro',
-          'Živý stream na sekundárny monitor alebo tablet',
-          'Detekcia opotrebovania bŕzd a teplotných výkyvov'
-        ]
-      },
-      {
-        id: 'formula-ultra-2026',
-        name: 'FORMULA ULTRA 2026 MOD',
-        category: 'rfactor',
-        price: 34.99,
-        badge: 'PHYSICS V2.8',
-        rating: 4.8,
-        reviewsCount: 29,
-        image: 'https://images.unsplash.com/photo-1534093607318-f025413f49cb?auto=format&fit=crop&w=800&q=80',
-        shortSpecs: 'rFactor 1 & 2 / Hybrid ERS System / Custom HUD',
-        description: 'Verne vytvorený monopost F1 podľa nových pravidiel pre rok 2026. Obsahuje pokročilú simuláciu rekuperácie energie (ERS) a nastaviteľný maping motora.',
-        compat: 'rFactor 2 / rFactor 1 Pro Edition',
-        features: [
-          'Simulácia Active Aerodynamics (DRS + Manual Boost)',
-          'Prispôsobený volantom vybavený TFT displej',
-          '10 rôznych motorových máp',
-          'Ultra-vysoké rozlíšenie 4K textúr cockpitu'
-        ]
-      },
-      {
-        id: 'setup-analyzer-engine',
-        name: 'CUSTOM SETUP ANALYZER ENGINE',
-        category: 'software',
-        price: 19.99,
-        badge: 'AI ANALYZER',
-        rating: 4.7,
-        reviewsCount: 19,
-        image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
-        shortSpecs: 'Automated Setup Tool / Live Recommendations',
-        description: 'Algoritmický nástroj, ktorý analyzuje vaše správanie na trati v rFactore a automaticky odporúča zmeny v nastavení tlmičov, sklonu krídel a prítlaku.',
-        compat: 'Akékoľvek rFactor 1/2 mody',
-        features: [
-          'AI odporúčania pre elimináciu nedotáčavosti / pretáčavosti',
-          'Automatické ukladanie ideálnych tlakov v pneumatikách',
-          'Rýchle profilovanie podľa typu trate',
-          'Intuitívne slovenské aj anglické rozhranie'
-        ]
-      },
-      {
-        id: 'nurburgring-24h-shader',
-        name: 'NÜRBURGRING 24H LASER SCAN PACK',
-        category: 'rfactor',
-        price: 14.99,
-        badge: 'LASER SCAN 0.5cm',
-        rating: 4.9,
-        reviewsCount: 64,
-        image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80',
-        shortSpecs: 'rFactor 2 Track / Dynamic Weather / Shader Pack',
-        description: 'Ikonický Nordschleife vrátane GP okruhu spracovaný najnovšou laser-scan technológiou. Obsahuje dynamický povrch trate s pogumovaním závodnej stopy.',
-        compat: 'rFactor 2',
-        features: [
-          'Presnosť nerovností na povrchu trate do 0.5 cm',
-          'Dynamické nočné osvetlenie a svetlá divákov',
-          'Realistické správanie kaluží pri daždi',
-          'Optimalizované pre vysoké FPS aj pri 50+ autách'
-        ]
-      },
-      {
-        id: 'simdash-client-app',
-        name: 'DYZAINER SIMDASH CLIENT',
-        category: 'software',
-        price: 0.00,
-        badge: 'FREE / DYZAINER APP',
-        rating: 4.9,
-        reviewsCount: 110,
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
-        shortSpecs: 'Digital Dashboard / Gear Indicator / Free Download',
-        description: 'Bezplatná klientska aplikácia pre rFactor simulátory. Premeňte svoj starý telefón alebo tablet na plnohodnotný racingový displej s LED otáčkomerom.',
-        compat: 'Windows / Android / iOS via Web-Bridge',
-        features: [
-          'Viac než 15 predpripravených dizajnov závodných budíkov',
-          'Nízka latencia prenosu cez lokálnu Wi-Fi/USB',
-          'Zobrazenie delty časov v reálnom čase',
-          'Plne prispôsobiteľné farby shifting LEDiek'
+          'Priamy výstup pre SimHub'
         ]
       }
     ];
